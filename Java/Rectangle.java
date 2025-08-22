@@ -23,4 +23,14 @@ public class Rectangle{
 
     }
 
+
+    public String toString(   ){
+
+        return 
+        "Area = " + area(width, height) + "\n" + 
+        "Perimeter = " + perimeter(width, height) + "\n" + 
+        "Diagonal = " + diagonal(width, height);
+
+    }
+
 }

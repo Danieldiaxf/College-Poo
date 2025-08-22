@@ -21,11 +21,20 @@ public class Program{
 
 
     System.out.println( product.toString(  ) );
-    
     System.out.print( "Enter the number of products to be addes in stock: " );
+
     int quantity = sc.nextInt(  );
     product.addProducts( quantity );
    
+    System.out.println( product.toString(  ) );
+
+
+    System.out.println( product.toString(  ) );
+    System.out.print( "Enter the number of products to be remove from stock: " );
+
+    quantity = sc.nextInt(  );
+    product.removeProducts( quantity );
+
     System.out.println( product.toString(  ) );
 
     sc.close();

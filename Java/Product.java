@@ -30,14 +30,12 @@ public class Product {
 
 
 
-    public String toString(  ){
+    public String toSring(  ){
 
         return "Product Data: " + name + 
         ", $ " + price + ", " + 
         quantity + " units, Total: " + 
         totalValueInStock(  );
-
-
     }
 
 

@@ -4,12 +4,8 @@ public class Employer {
     public int age;
     public double salary;
 
+    public double taxSalary = 20 / 100; 
 
-    public salaryL(  ){
-
-
-        
-    }
+    public double salaryL = salary * taxSalary;
 
 }
-

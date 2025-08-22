@@ -8,4 +8,14 @@ public class Employer {
 
     public double salaryL = salary * taxSalary;
 
+
+
+
+
+    public String toString(  ){
+
+    return "Name: " + name;
+
+    }
+
 }

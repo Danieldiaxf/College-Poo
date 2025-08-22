@@ -15,7 +15,7 @@ public class Run {
         System.out.print( "Enter your salary: " ); 
         employer.salary = sc.nextDouble(  );
 
-        System.out.print( "Which the percentage to ncrease salary? " ); 
+        System.out.print( "Which the percentage of tax? " ); 
         employer.tax = sc.nextDouble(  );
 
 
@@ -23,6 +23,5 @@ public class Run {
 
         sc.close(  ); 
     }
-
 
 }

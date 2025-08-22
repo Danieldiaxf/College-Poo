@@ -4,7 +4,12 @@ public class Employer {
     public int age;
     public double salary;
     public double tax;
-    public double salaryL = ( salary ) * ( tax / 100 );
+    
+    public double salaryL( double x , double y ){
+
+        return ( ( salary ) * ( y / 100 ) + salary );
+
+    }
 
     
     
@@ -15,7 +20,7 @@ public class Employer {
     "\nAge: " + age +
     "\nGross Salary: " + salary +
     "\nEmployee: " + name + " $ " + salary +
-    "\nUpdate data: " + name + " $ " + salaryL
+    "\nUpdate data: " + name + " $ " + salaryL( salary , tax )
     ;
 
     }

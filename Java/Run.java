@@ -8,11 +8,18 @@ public class Run {
 
         Employer employer = new Employer();
 
-        employer.name = "Daniel";   
-        employer.age = 20;
-        employer.salary = 1556.00;
+        System.out.print( "Enter your name: " );
+        employer.name = sc.nextLine(  );  
+        System.out.print( "Enter your age: " ); 
+        employer.age = sc.nextInt(  );
+        System.out.print( "Enter your salary: " ); 
+        employer.salary = sc.nextDouble(  );
+
+        System.out.print( "Which the percentage to ncrease salary? " ); 
+        employer.tax = sc.nextDouble(  );
 
 
+        System.out.println( employer.toString(  ) );
 
         sc.close(  ); 
     }

@@ -3,18 +3,20 @@ public class Employer {
     public String name;
     public int age;
     public double salary;
+    public double tax;
+    public double salaryL = ( salary ) * ( tax / 100 );
 
-    public double taxSalary = 20 / 100; 
-
-    public double salaryL = salary * taxSalary;
-
-
-
-
-
+    
+    
+    
     public String toString(  ){
 
-    return "Name: " + name;
+    return "Name: " + name +
+    "\nAge: " + age +
+    "\nGross Salary: " + salary +
+    "\nEmployee: " + name + " $ " + salary +
+    "\nUpdate data: " + name + " $ " + salaryL
+    ;
 
     }
 

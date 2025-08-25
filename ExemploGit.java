@@ -6,6 +6,7 @@ public class ExemploGit {
 
         Scanner sc = new Scanner(System.in);
         
+        Git car = new Git( );
 
 
 

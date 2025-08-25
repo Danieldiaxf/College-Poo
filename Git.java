@@ -17,7 +17,7 @@ public class Git {
 
         }else{
 
-            System.out.println( "Carro afogou!" );
+            System.out.println( "Carro afogou" );
 
         }
 

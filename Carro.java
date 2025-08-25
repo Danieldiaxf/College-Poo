@@ -1,4 +1,4 @@
-public class Git {
+public class Carro {
     
     private String name;
     private String marca;

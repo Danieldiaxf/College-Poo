@@ -1,12 +1,12 @@
 import java.util.Scanner;
 
-public class ExemploGit {
+public class RunCar {
     
     public static void main( String[] args ){
 
         Scanner sc = new Scanner(System.in);
         
-        Git car = new Git( );
+        Carro car = new Carro( );
 
 
 

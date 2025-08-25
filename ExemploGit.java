@@ -1,11 +1,13 @@
 import java.util.Scanner;
 
-public class Daniel {
+public class ExemploGit {
     
     public static void main( String[] args ){
 
         Scanner sc = new Scanner(System.in);
         
+
+
 
 
         sc.close();

@@ -4,11 +4,22 @@ public class Git {
     private String marca;
     private int cor;
 
-    public void ligar( String x ){
+    public void ligar(  ){
 
-        this.marca = x;
+        System.out.println( "Carro ligado" );
 
-        System.out.printf( "%s ligou", x );
+    }
+    public void ligar( boolean puxouAfogador  ){
+
+        if( puxouAfogador ){
+
+            ligar(  );
+
+        }else{
+
+            System.out.println( "Carro afogou!" );
+
+        }
 
     }
 

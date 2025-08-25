@@ -1,52 +1,19 @@
-public class Carro {
+public class Carro extends Automovel {
     
-    private String name;
-    private String marca;
-    private int cor;
+    public boolean arCondicionado;
 
-    public void ligar(  ){
+    public boolean isArcondicionado(){
 
-        System.out.println( "Carro ligado" );
-
-    }
-    public void ligar( boolean puxouAfogador  ){
-
-        if( puxouAfogador ){
-
-            ligar(  );
-
-        }else{
-
-            System.out.println( "Carro afogou" );
-
-        }
+        return arCondicionado;
 
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setArCondicionado( boolean arCondicionado ){
 
 
-    public String getMarca() {
-        return marca;
+        this.arCondicionado = arCondicionado;
+
     }
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-    
-    
-    public int getCor() {
-        return cor;
-    }
-    public void setCor(int cor) {
-        this.cor = cor;
-    }
-    
 
 
 }

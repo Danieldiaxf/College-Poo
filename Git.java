@@ -4,6 +4,14 @@ public class Git {
     private String marca;
     private int cor;
 
+    public void ligar( String x ){
+
+        this.marca = x;
+
+        System.out.printf( "%s ligou", x );
+
+    }
+
     public String getName() {
         return name;
     }

@@ -2,9 +2,10 @@ public class Carro extends Automovel {
     
     public boolean arCondicionado;
 
-    public void ligar(){
+    public void ligar(  ){
 
-        System.out.println("Carro ligado" );
+        super.ligar(  );
+        System.out.println( "Carro ligado" );
 
     }
 

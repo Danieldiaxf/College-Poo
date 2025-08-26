@@ -16,6 +16,15 @@ public class Empresa {
         Daniel.setBeneficio( 0.1 );
 
         System.out.println( Daniel.setCalcularSalario( Daniel.beneficio ) );
+
+
+        FuncionariosComissionados Pedro = new FuncionariosComissionados();
+        Pedro.setIdade(20);
+        Pedro.setCpf("0147852336");
+        Pedro.setSalarioB(3000);
+        Pedro.setSalarioC(2000);
+
+        System.out.println( Pedro.setSalarioC( Pedro.comissao ));
         
 
         sc.close();

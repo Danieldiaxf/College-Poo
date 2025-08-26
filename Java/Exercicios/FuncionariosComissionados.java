@@ -17,7 +17,7 @@ public class FuncionariosComissionados extends Funcionarios {
 
         this.comissao = comissao;
 
-        return ( comissao * getSalarioB() );
+        return ( comissao + getSalarioB() );
         
     }
 

@@ -17,9 +17,9 @@ public class Exemple01 {
         double v = calc.volume( radius );
 
 
-        System.out.printf( "Circumference: %.2f", c );
-        System.out.printf( "\nvolume: %.2f", v );
-        System.out.printf( "\nPI value: %.2f", calc.PI );
+        System.out.printf( "The Circumference's value: %.2f", c );
+        System.out.printf( "\nThe Volume's value : %.2f", v );
+        System.out.printf( "\nThe PI has value: %.2f", calc.PI );
 
         sc.close();
 

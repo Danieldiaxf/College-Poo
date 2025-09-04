@@ -14,10 +14,10 @@ public class Case01 {
         System.out.print( "Name: " );
         product.name = sc.nextLine(  );
 
-        System.out.print( "Price " );
+        System.out.print( "Price: " );
         product.price = sc.nextDouble(  );
 
-        System.out.print( "Quantity in stock" );
+        System.out.print( "Quantity in stock: " );
         product.quantity = sc.nextInt(  );
 
         System.out.println();
@@ -33,17 +33,17 @@ public class Case01 {
 
         System.out.println(  );
 
-        System.out.printf( "Data update: %f", product );
+        System.out.printf( "Data update: %s", product );
 
 
-        System.out.println( "Enter the quantity to be removed: " );
+        System.out.print( "Enter the quantity to be removed: " );
         int rmv = sc.nextInt(  );
 
         System.out.println( product.addProducts( rmv ) );
 
         System.out.println(  );
 
-        System.out.printf( "Data update: %f", product );
+        System.out.printf( "Data update: %s", product );
 
         sc.close();
     }

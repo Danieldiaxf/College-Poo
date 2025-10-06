@@ -15,7 +15,7 @@ public class Product {
     }
 
 
-        public int removeProducts( int value ){
+    public int removeProducts( int value ){
 
 
         return quantity + value;

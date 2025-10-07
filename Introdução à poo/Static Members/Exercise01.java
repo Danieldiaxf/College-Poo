@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import util.CurrencyConverter;
 
 public class Exercise01 {
     

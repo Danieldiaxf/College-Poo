@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class Case01 {
@@ -50,3 +48,4 @@ public class Case01 {
 
 
 }
+

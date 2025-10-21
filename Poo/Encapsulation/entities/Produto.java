@@ -3,7 +3,7 @@ package Poo.Encapsulation.entities;
 public class Produto {
 
     //Atributos Essenciais
-    protected String name;
+    private String name;
     private double price;
     private int quantity;
     

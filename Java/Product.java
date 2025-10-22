@@ -1,41 +1,35 @@
-// Cria-se uma nova classe chamda Protudo
 public class Product {
-    
-    // A classe possuí 4 atributos
+
     public String name;
     public double price;
     public int quantity;
 
-    // O valor do estoque = preço * quantidade
-    public double totalValueInStock(){
+
+    public Product( String name, double price, int quantity ){
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+
+    public double totalValueInStock( ){
         return price * quantity;
     }
 
-
-    // Função para adicionar quantidade de um produto
     public void addProducts( int quantity ){
-
         this.quantity += quantity;
-
-
     }
 
-
-    // Função para remover quantidade de um produto
     public void removeProducts( int quantity ){
-
         this.quantity -= quantity;
-
     }
 
 
-
-    public String toSring(  ){
-
+    public String toSring( ){
         return "Product Data: " + name + 
         ", $ " + price + ", " + 
         quantity + " units, Total: " + 
-        totalValueInStock(  );
+        totalValueInStock( );
     }
 
 

@@ -1,10 +1,10 @@
-package Poo.Encapsulation.application;
+package Encapsulation.application;
 
 import java.util.Scanner;
 
 import javax.lang.model.element.Name;
 
-import Poo.Encapsulation.entities.Produto;
+import Encapsulation.entities.Produto;
 
 public class Main {
     

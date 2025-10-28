@@ -1,7 +1,7 @@
-package Poo.Constructor.application;
+package Constructor.application;
 import java.util.Scanner;
 
-import Poo.Constructor.entities.Product;
+import Constructor.entities.Product;
 
 public class Program{
 
@@ -17,7 +17,7 @@ public class Program{
     System.out.print( "Price:" );
     double price = sc.nextDouble();
     
-    Product product = new Product( name, price );
+    Constructor.entities.Product product = new Product( name, price );
 
 
     System.out.println( product.toString(  ) );

@@ -1,4 +1,4 @@
-package Poo.Encapsulation.entities;
+package Encapsulation.entities;
 
 public class Produto {
 

@@ -1,6 +1,6 @@
-package Poo.Encapsulation.entities;
+package Encapsulation.entities;
 import java.util.Date;
-import Poo.Constructor.entities.Product;
+import Constructor.entities.Product;
 
 public class Order {
 

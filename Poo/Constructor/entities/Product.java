@@ -1,4 +1,4 @@
-package Poo.Constructor.entities;
+package Constructor.entities;
     
 public class Product {
 

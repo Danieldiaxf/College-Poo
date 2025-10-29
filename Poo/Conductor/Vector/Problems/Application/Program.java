@@ -16,6 +16,7 @@ public class Program {
         People[ ] people = new People[ n ];
 
         for( int i = 0; i < people.length; i++ ){
+
             System.out.printf( "Dados da %d pessoa: \n", i + 1 );  
             sc.nextLine();
             System.out.print( "name: " ); 
@@ -25,11 +26,20 @@ public class Program {
             System.out.print( "\nheight: " ); 
             double height = sc.nextDouble( ); 
             System.out.println(  );
-            people[ i ] = new People(name, age, height);
+            people[ i ] = new People( name , age, height );
+            System.out.println(  );
 
         }
 
+        double sum = 0.0;
 
+        for( int i = 0; i < people.length; i ++ ){
+            sum += people[ i ].getHeight(  );
+        }
+
+        double avg = sum / people.length;
+        System.out.println( avg );
+    
 
         sc.close( );
 

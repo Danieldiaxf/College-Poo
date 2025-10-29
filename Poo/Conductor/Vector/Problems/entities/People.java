@@ -14,37 +14,34 @@ public class People {
     }
 
 
-    public String getName() {
+    public String getName( ) {
         return name;
     }
 
 
-    public void setName(String name) {
+    public void setName( String name ) {
         this.name = name;
     }
 
 
-    public int getAge() {
+    public int getAge( ) {
         return age;
     }
 
 
-    public void setAge(int age) {
+    public void setAge( int age ) {
         this.age = age;
     }
 
 
-    public double getHeight() {
+    public double getHeight( ) {
         return height;
     }
 
 
-    public void setHeight(double height) {
+    public void setHeight( double height ) {
         this.height = height;
     }
-
-    
-    
 
 
 }

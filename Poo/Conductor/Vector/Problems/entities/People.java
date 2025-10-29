@@ -44,4 +44,14 @@ public class People {
     }
 
 
+    @Override
+    public String toString(  ) {
+        return "Name: " + name +
+                "\n Age: " + age +
+                "\n Height: " + height; 
+    }
+
+
+    
+
 }

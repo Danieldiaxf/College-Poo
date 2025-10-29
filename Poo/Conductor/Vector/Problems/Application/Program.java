@@ -10,9 +10,11 @@ public class Program {
 
         Scanner sc = new Scanner( System.in );
 
+        // vector's length!
         System.out.print( "How many people will be added? " );
         int n = sc.nextInt(  );
 
+        // new vector 'people'!
         People[ ] people = new People[ n ];
 
         for( int i = 0; i < people.length; i++ ){
@@ -27,9 +29,15 @@ public class Program {
             double height = sc.nextDouble( ); 
             System.out.println(  );
             people[ i ] = new People( name , age, height );
-            System.out.println(  );
 
         }
+
+            System.out.println("\n--- PESSOAS CADASTRADAS ---");
+                    
+            for ( People p : people ) {
+                System.out.println( p ); 
+                System.out.println("--------------------------");
+            }
 
         double sum = 0.0;
 
@@ -38,7 +46,7 @@ public class Program {
         }
 
         double avg = sum / people.length;
-        System.out.println( avg );
+        System.out.printf( "Média de Idades = %f", avg );
     
 
         sc.close( );

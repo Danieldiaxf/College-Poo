@@ -42,7 +42,7 @@ public class Program {
             // ...e armazena esse novo objeto na posição 'i' do vetor 'people'
             people[ i ] = new People( name , age, height ); 
 
-        } // Fim do loop de leitura
+        } // Fim do loop de leitura!
 
         // --- 4. IMPRESSÃO DOS DADOS CADASTRADOS ---
         System.out.println("\n--- PESSOAS CADASTRADAS ---"); // Imprime um título de seção

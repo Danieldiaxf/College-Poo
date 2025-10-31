@@ -42,7 +42,7 @@ public class Program {
             // ...e armazena esse novo objeto na posição 'i' do vetor 'people'
             people[ i ] = new People( name , age, height ); 
 
-        } // Fim do loop de leitura!
+        } // Fim do for!
 
         // --- 4. IMPRESSÃO DOS DADOS CADASTRADOS ---
         System.out.println("\n--- PESSOAS CADASTRADAS ---"); // Imprime um título de seção
@@ -64,7 +64,17 @@ public class Program {
         double avg = sum / people.length; // Calcula a média aritmética (soma total / quantidade)
         
         // !! ATENÇÃO (BUG) !! O cálculo acima foi da média de ALTURA (avg), mas o texto imprime "Média de Idades"
-        System.out.printf( "Média de Idades = %f", avg );
+        System.out.printf( "Média de Idades = %f\n", avg );
+
+        double percent = 0;
+
+        for( int i = 0; i < people.length; i++ ){
+            if( people[ i ].getAge() < 16 ){
+                percent = percent + 1;
+            }
+        }
+
+        System.out.print( percent / n * 100 + "%");
     
         sc.close( ); // Fecha o Scanner (boa prática para liberar recursos)
 

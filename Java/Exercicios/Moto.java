@@ -1,3 +1,5 @@
+package Exercicios;
+
 public class Moto extends Automovel {
     
     public boolean cabineFechada;

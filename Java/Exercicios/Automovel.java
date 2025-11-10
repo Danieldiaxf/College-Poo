@@ -1,3 +1,5 @@
+package Exercicios;
+
 public class Automovel {
     
     private String marca;

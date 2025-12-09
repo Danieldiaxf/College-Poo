@@ -34,7 +34,7 @@ public class Program {
             }
         }
 
-        System.out.println( "Negative Numbers:" + count );
+        System.out.println( "Negative Numbers = " + count );
 
         sc.close( );
     }

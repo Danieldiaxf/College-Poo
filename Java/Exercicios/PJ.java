@@ -1,3 +1,5 @@
+package Exercicios;
+
 public class PJ extends Pessoa {
     
     private String cpf;

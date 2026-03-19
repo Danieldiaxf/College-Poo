@@ -31,6 +31,7 @@ public class Program2 {
 
         System.out.printf( "Average Price = %.2f", avg );
 
+        sc.close();
     }
 
 }

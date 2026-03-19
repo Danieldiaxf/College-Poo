@@ -12,7 +12,7 @@ public class triangulo {
         double x1 = sc.nextDouble(  );
         double x2 = sc.nextDouble(  );
         double x3 = sc.nextDouble(  );
-        double PX = ( ( x1 + x2 + x3 ) / 2 );
+        double PX = ( x1 + x2 + x3 ) / 2;
 
 
         System.out.println( "Insira as Medidas do triângulo Y: " );
@@ -20,7 +20,7 @@ public class triangulo {
         double y1 = sc.nextDouble(  );
         double y2 = sc.nextDouble(  );
         double y3 = sc.nextDouble(  );
-        double PY = ( ( y1 + y2 + y3 ) / 2 );
+        double PY = ( y1 + y2 + y3 ) / 2 ;
 
         double areaY = Math.sqrt( PY * ( PY - y1 ) * ( PY - y2 ) * ( PY - y3 ) );
 

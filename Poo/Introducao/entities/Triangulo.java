@@ -1,7 +1,8 @@
+package entities;
 import java.util.Scanner;
 import java.math.*;
 
-public class triangulo {
+public class Triangulo {
 
     public static void main( String[ ] args ) {
 

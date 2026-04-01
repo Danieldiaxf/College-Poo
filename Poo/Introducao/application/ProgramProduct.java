@@ -2,7 +2,7 @@ package application;
 
 import java.util.Scanner;
 
-import Constructor.entities.Product;
+import Construtor.entities.Product;
 
 public class ProgramProduct {
     

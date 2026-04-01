@@ -20,30 +20,27 @@ public class ProgramProduct {
 
         System.out.print( "Insira o preço do produto: " );
         product.price = sc.nextDouble(  );
-        System.out.println( );
         
-        System.out.println( "### Dados do Produto ###" );
+        System.out.println( );
 
-        System.out.printf( "Name: %s\n", product.name );
-        System.out.printf( "Quantity: %d\n", product.quantity );
-        System.out.printf( "Name: %.2f\n", product.price );
-        System.out.println( "Total: " + product.totalValueInStock( ) );
-        System.out.println(  );
+        System.out.println( product.toSring( ) );
 
-        System.out.print( "Produtos a serem adicionados:" );
-        int x = sc.nextInt( );
-        product.addProducts(x);
-        System.out.print( "Produtos a serem removidos:" );
-        int y = sc.nextInt( );
-        product.removeProducts(y);
-        System.out.println(  );
+        System.out.print( "Número de produtos a serem adicionados ao estoque: " );
+        int qtd = sc.nextInt();
+        product.addProducts( qtd );
 
-        System.out.println( "### Dados Atualizados do Produto ###" );
-        System.out.printf( "Name: %s\n", product.name );
-        System.out.printf( "Quantity: %d\n", product.quantity );
-        System.out.printf( "Name: %.2f\n", product.price );
-        System.out.println( "Total: " + product.totalValueInStock( ) );
+        System.out.println( );
 
+        System.out.println( product.toSring( ) );
+
+        System.out.print( "Número de produtos a serem removidos do estoque: " );
+        int rmv = sc.nextInt();
+        product.addProducts( rmv );
+
+        System.out.println( );
+
+        System.out.println( product.toSring( ) );
+        
         sc.close(  );
     }
 

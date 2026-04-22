@@ -47,16 +47,24 @@ public class Conta {
 
 
     public double getSaldo( ) {
-        return saldo;
+        return saldo + depositoInicial;
     }
 
 
     public void deposito( double valor ) {
-        saldo += valor;
+        saldo = saldo + valor;
     }
 
     public void saque( double valor ) {
-        saldo -= valor - 5.00;
+        saldo = saldo - valor - 5.00;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Conta [Número da conta: " + getId() + 
+        ", Nome do Titular: " + getNomeTitular() + 
+        ", Saldo da Conta: " + getSaldo() + "]";
     }
 
 }

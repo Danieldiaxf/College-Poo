@@ -1,3 +1,4 @@
+package Exercicios.entities;
 public class Employer {
     
     public String name;

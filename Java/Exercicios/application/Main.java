@@ -1,4 +1,6 @@
-package Exercicios;
+package Exercicios.application;
+
+import Exercicios.entities.PF;
 
 public class Main {
     

@@ -1,3 +1,4 @@
+package Exercicios.entities;
 import java.util.Scanner;
 
 public class Program{

@@ -1,4 +1,5 @@
-package Exercicios;
+package Exercicios.entities;
+
 public class FuncionariosCLT extends Funcionarios{
 
     public double beneficio;

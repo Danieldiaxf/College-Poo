@@ -1,4 +1,7 @@
+package Exercicios.application;
 import java.util.Scanner;
+
+import Exercicios.entities.Rectangle;
 public class Start{
 
     public static void main( String[] args ){

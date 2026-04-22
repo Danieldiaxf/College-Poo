@@ -1,5 +1,5 @@
 
-package Exercicios;
+package Exercicios.entities;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Conductor.Matrices.application;
+package Comportamento.Matrices.application;
 
 import java.util.Scanner;
 

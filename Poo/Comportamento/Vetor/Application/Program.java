@@ -9,23 +9,28 @@ public class Program {
     
     Scanner sc = new Scanner( System.in );
 
-        int n = sc.nextInt();
+    // Tamnnho do vetor a ser inserido peo usuário
+    System.out.print( "Quantas alturas deseja inserir: " );
+    int n = sc.nextInt( );
 
-        double[ ] vect = new double[ n ];
+    // Instanciação de um vetor chamado vetor
+    // Tipo de Dado[ ] + Nome do vetor = new Tipo de Dado[ tamanho da estrutura ]
+    double[ ] vetor = new double[ n ];
 
-        for( int i = 0; i < n; i++ ){
-            vect[ i ] = sc.nextDouble( );
-        }
+    // Laço para percorrer os indices do vetor
+    for( int i = 0; i < n; i++ ){
+        vetor[ i ] = sc.nextDouble( );
+    }
 
-        double sum = 0.0;
+    double sum = 0.0;
 
-        for( int i = 0; i < n; i++ ){
-            sum += vect[ i ];
-        }
+    for( int i = 0; i < n; i++ ){
+        sum += vetor[ i ];
+    }
 
-        double avg = sum / n;
+    double avg = sum / n;
 
-        System.out.printf( "AVARAGE HEIGHT: %2f%n", avg );
+    System.out.printf( "Médias das Alturas: %.2f%n", avg );
 
     sc.close();
 

@@ -2,7 +2,8 @@ package Comportamento.Vetor.Application;
 
 import java.util.Scanner;
 
-import Comportamento.Vetor.entities.Product2;
+import Comportamento.Vetor.entities.Produto2;
+
 
 public class Program2 {
     
@@ -10,26 +11,35 @@ public class Program2 {
         
         Scanner sc = new Scanner( System.in );
 
-        int n = sc.nextInt( );
+        System.out.print( "Quantos produtos a serem adicionados: " );
+        int n = sc.nextInt(  );
 
-        Product2[ ] vect = new Product2[ n ];
+        sc.nextLine();
 
-        for( int i = 0; i < vect.length; i++ ){
+        // Cria o Array produto
+        Produto2 produto[ ] = new Produto2[ n ];
+
+        for( int i = 0; i < n; i++ ){
+            // Instanciação do produto[i] como Produto2
+            produto[ i ] = new Produto2( );
+            System.out.printf( "Nome do %d produto: ", i + 1 );
+            produto[ i ].setNome( sc.nextLine( ) );
+            System.out.print( "Seu preço: ");
+            produto[ i ].setPreco( sc.nextDouble( ) );
             sc.nextLine( );
-            String name = sc.nextLine( );
-            double price = sc.nextDouble( );
-            vect[ i ] = new Product2( name, price );
         }
 
-        double sum = 0.0;
+        double soma = 0.0;
 
-        for( int i = 0; i < vect.length; i++ ){
-            sum += vect[ i ].getPrice();
+
+        for( int i = 0; i < produto.length; i++ ){
+            soma += produto[ i ].getPreco();
         }
 
-        double avg = sum / vect.length;
-
-        System.out.printf( "Average Price = %.2f", avg );
+        for (int i = 0; i < produto.length; i++) {
+            System.out.println( produto[ i ].getNome( ) +": " +produto[ i ].getPreco( ) );
+        }
+        System.out.println( soma / produto.length );
 
         sc.close();
     }

@@ -17,5 +17,6 @@ public class ProgramPoo {
 
         System.out.println( triangulo.area( ) );
 
+        sc.close();
     }
 }

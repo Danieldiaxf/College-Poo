@@ -38,10 +38,15 @@ public class QuartoRun {
             sc.nextLine( );
 
             // 
-            quartos[ quarto ] = new PessoaQuarto( nome, email );
+            quartos[ quarto - 1 ] = new PessoaQuarto( nome, email );
 
         }
 
+        System.out.println(  );
+
+        for (int i = 0; i < quartos.length; i++) {
+            System.out.println( quartos[ i ] );
+        }
 
         sc.close(  );
     }
